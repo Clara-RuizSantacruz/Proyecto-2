@@ -11,7 +11,7 @@
     transition: opacity 3s ease-in-out;
 }
 
-.container.loaded {
+.loaded {
     opacity: 1; 
 }
 
