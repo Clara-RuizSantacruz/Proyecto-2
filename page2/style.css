@@ -1,36 +1,75 @@
- 
-.listButton button {
-    background-color: #D4E2D4;
-    border-radius: 10px;
-    border-color: #000000;
-    border: 1px solid;
-    font-size: 16px;
-    width: 165px;
-    height: 49px;
+@media screen and (min-width: 430px) {
+    .listButton button {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+    }
+
+    select {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    select option {
+        text-align: left;
+    }
+
+    .listButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 337px;
+    }
 }
 
-#cursos {
-    background-color: #D4E2D4;
-    border-radius: 10px;
-    border-color: #000000;
-    border: 1px solid;
-    font-size: 16px;
-    width: 165px;
-    height: 49px;
-    text-align: center;
+@media screen and (max-width: 430px) {
 
-   .listadoppal ul {
-        display: none;
+    .listButton button {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
     }
-    ul li:hover > ul {
-        display: 
-        block;
+
+    #loadlistbutton {
+        padding-top: 42px;
     }
-}
-.listButton {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 337px;
+
+    select {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    select option {
+        text-align: left;
+    }
+
+    .listButton {
+        display: flex;
+        flex-direction: column;
+        padding-top: 86px;
+        align-items: center;
+    }
 }
