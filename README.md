@@ -10,6 +10,7 @@ Este proyecto es una aplicación de uso interno diseñada para la Escuela de bai
 
 2. **Administrador de Listas:**
    - **Formulario:** Permite rellenar los datos de cada persona, generando una lista o tabla.
+   - **Lista:** Aparecerán los datos que hemos rellenado en el formulario.
    - **Guardar Lista:** Aunque actualmente no está funcional, el botón de "Guardar Lista" muestra un mensaje de alerta al pulsarse.
    - **Seleccionar Lista Guardada:** Permite cargar listas anteriormente guardadas, aunque esta función no está operativa en la versión actual.
 
