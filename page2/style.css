@@ -58,3 +58,16 @@
     padding-top: 30px;
 }
 
+@media (max-width: 430px) {
+    .body-container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .formulary-background{
+        margin-bottom: 50px;
+    }
+
+}
