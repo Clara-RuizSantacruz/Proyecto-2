@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link src="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <script src="script.js"></script>
+
+    <section class="formulary-background">
+
+        <form class="formulary">
+
+            <div>
+            <label for="list-title">Título de la lista:</label>
+            <input class="input" id="list-title">
+            </div>
+
+            <div>
+            <label for="first-name">Nombre:</label>
+            <input class="input" id="first-name">
+        </div>
+
+            <div class="double-column">
+
+                <div>
+                <label for="first-lastname">Primer apellido:</label>
+                <input class="input" id="first-lastname">
+                </div>
+
+                <div>
+                <label for="second-lastname">Segundo apellido:</label>
+                <input class="input" id="second-lastname">
+                </div>
+            </div>
+
+            <div>
+            <label for="rol">Rol:</label>
+            <select class="input" id="rol">
+                <option value="empty" selected disabled hidden> </option>
+                <option value="student">Estudiante</option>
+                <option value="teacher">Docente</option>
+                <option value="stuff">PAS</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="level">Curso:</label>
+            <select class="input" id="level">
+                <option value="empty" selected disabled hidden> </option>
+                <option value="begginer">Principiante</option>
+                <option value="medium">Intermedio</option>
+                <option value="advanced">Avanzado</option>
+                <option value="none">-</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="class">Clase:</label>
+            <select class="input" id="class">
+                <option value="empty" selected disabled hidden> </option>
+                <option value="flamenco">Flamenco</option>
+                <option value="hiphop">Hip Hop</option>
+                <option value="ballet">Ballet</option>
+                <option value="none">-</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input class="input" id="email">
+        </div>
+
+        <div class="send-button">
+            <button class="button">Enviar</button>
+        </div>
+        </form>
+
+    </section>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
