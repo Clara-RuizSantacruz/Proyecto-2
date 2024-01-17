@@ -57,3 +57,38 @@
     justify-content: center;
     margin-top: 20px;
 }
+.listButton button {
+    background-color: #D4E2D4;
+    border-radius: 10px;
+    border-color: #000000;
+    border: 1px solid;
+    font-size: 16px;
+    width: 165px;
+    height: 49px;
+}
+
+#cursos {
+    background-color: #D4E2D4;
+    border-radius: 10px;
+    border-color: #000000;
+    border: 1px solid;
+    font-size: 16px;
+    width: 165px;
+    height: 49px;
+    text-align: center;
+
+   .listadoppal ul {
+        display: none;
+    }
+    ul li:hover > ul {
+        display: 
+        block;
+    }
+}
+.listButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 337px;
+}
