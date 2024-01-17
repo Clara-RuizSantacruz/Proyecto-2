@@ -13,265 +13,306 @@
 </head>
 
 <body>
-    <!-- Aquí empieza el HTML del FORMULARIO -->
-    <section class="formulary-background">
 
-        <form class="formulary">
+    <!-- Aquí empieza el NAVBAR-->
+    <div class="container" id="mainContainer">
+        <nav class="navBar">
 
-            <div>
-                <label for="list-title">Título de la lista:</label>
-                <input class="input" id="list-title">
+            <a href="http://127.0.0.1:5500/landingPage/index.html">
+                <img class="link" id="logo" src="images/logo.svg" alt="logo">
+            </a>
+
+            <div class="iconHolder">
+
+                <div class="homeIcon">
+                    <img class="icon" src="images/home-mobile-ui-svgrepo-com.svg" alt="icon-home">
+                    <h3> <a class="link" href="http://127.0.0.1:5500/landingPage/index.html">Home</a> </h3>
+                </div>
+                <div class="helpIcon">
+                    <img class="icon" src="images/help-circle-svgrepo-com.svg" alt="icon-help">
+                    <h3> <a class="link" href="#">Help</a> </h3>
+                </div>
             </div>
+        </nav>
+    </div>
 
-            <div>
-                <label for="first-name">Nombre:</label>
-                <input class="input" id="first-name">
-            </div>
 
-            <div class="double-column">
+    <!-- Aquí empieza FORMULARIO -->
+    <section class="mainGroup">
+        <section class="formulary-background">
+
+            <form class="formulary">
 
                 <div>
-                    <label for="first-lastname">Primer apellido:</label>
-                    <input class="input" id="first-lastname">
+                    <label for="list-title">Título de la lista:</label>
+                    <input class="input" id="list-title">
                 </div>
 
                 <div>
-                    <label for="second-lastname">Segundo apellido:</label>
-                    <input class="input" id="second-lastname">
+                    <label for="first-name">Nombre:</label>
+                    <input class="input" id="first-name">
                 </div>
-            </div>
 
-            <div>
-                <label for="rol">Rol:</label>
-                <select class="input" id="rol">
-                    <option value="" selected disabled hidden> </option>
-                    <option value="student">Estudiante</option>
-                    <option value="teacher">Docente</option>
-                    <option value="stuff">PAS</option>
-                </select>
-            </div>
+                <div class="double-column">
 
-            <div>
-                <label for="level">Curso:</label>
-                <select class="input" id="level">
-                    <option value="empty" selected disabled hidden> </option>
-                    <option value="begginer">Principiante</option>
-                    <option value="medium">Intermedio</option>
-                    <option value="advanced">Avanzado</option>
-                    <option value="none">-</option>
-                </select>
-            </div>
+                    <div>
+                        <label for="first-lastname">Primer apellido:</label>
+                        <input class="input" id="first-lastname">
+                    </div>
 
-            <div>
-                <label for="class">Clase:</label>
-                <select class="input" id="class">
-                    <option value="empty" selected disabled hidden> </option>
-                    <option value="flamenco">Flamenco</option>
-                    <option value="hiphop">Hip Hop</option>
-                    <option value="ballet">Ballet</option>
-                    <option value="none">-</option>
-                </select>
-            </div>
+                    <div>
+                        <label for="second-lastname">Segundo apellido:</label>
+                        <input class="input" id="second-lastname">
+                    </div>
+                </div>
 
-            <div>
-                <label for="email">Email:</label>
-                <input class="input" id="email">
-            </div>
+                <div>
+                    <label for="rol">Rol:</label>
+                    <select class="input" id="rol">
+                        <option value="" selected disabled hidden> </option>
+                        <option value="student">Estudiante</option>
+                        <option value="teacher">Docente</option>
+                        <option value="stuff">PAS</option>
+                    </select>
+                </div>
 
-            <div id="send-button-container">
-                <button class="send-button">Enviar</button>
-            </div>
-        </form>
+                <div>
+                    <label for="level">Curso:</label>
+                    <select class="input" id="level">
+                        <option value="empty" selected disabled hidden> </option>
+                        <option value="begginer">Principiante</option>
+                        <option value="medium">Intermedio</option>
+                        <option value="advanced">Avanzado</option>
+                        <option value="none">-</option>
+                    </select>
+                </div>
 
-    </section>
-    <!-- Aquí termina el HTML del FORMULARIO -->
+                <div>
+                    <label for="class">Clase:</label>
+                    <select class="input" id="class">
+                        <option value="empty" selected disabled hidden> </option>
+                        <option value="flamenco">Flamenco</option>
+                        <option value="hiphop">Hip Hop</option>
+                        <option value="ballet">Ballet</option>
+                        <option value="none">-</option>
+                    </select>
+                </div>
 
-    <section class="listButton">
+                <div>
+                    <label for="email">Email:</label>
+                    <input class="input" id="email">
+                </div>
 
-        <button id="saveListButton">Guardar</button>
+                <div id="send-button-container">
+                    <button class="send-button">Enviar</button>
+                </div>
+            </form>
 
-        <form action="#" id="loadlistbutton">
+        </section>
 
-            <select name="listas">
-                <option selected disabled>Cargar Listas</option>
-                <optgroup label="Rol">
-                    <option value="estudiante">Estudiante</option>
-                    <option value="docente">Docente</option>
-                    <option value="pas">PAS</option>
-                    <option value="otros">-</option>
-                </optgroup>
-                <optgroup label="Estilo">
-                    <option value="flamenco">Flamenco</option>
-                    <option value="hiphop">Hip Hop</option>
-                    <option value="Ballet">Ballet</option>
-                </optgroup>
-                <optgroup label="Curso">
-                    <option value="basico">Básico</option>
-                    <option value="intermedio">Intermedio</option>
-                    <option value="superior">Superior</option>
-                </optgroup>
-                <optgroup label="Clase">
-                    <option value="primero">Primero</option>
-                    <option value="segundo">Segundo</option>
-                    <option value="tercero">Tercero</option>
-                </optgroup>
 
-            </select>
+        <!--Aquí empieza la TABLA -->
+        <section class="listAndButtonsGroup">
+            <section>
+                <div class="list">
+                    <h1 class="title"> <!--Ttitulo tabla -->
+                        Listado
+                    </h1>
+                    <!--Tabla -->
+                    <table id="myTable">
 
-        </form>
+                        <tr> <!--primera fila -->
+                            <th> <!--table header -->
+                                Nombre:
+                            </th>
+                            <th>
+                                Primer Apellido:
+                            </th>
+                            <th>
+                                Segundo Apellido:
+                            </th>
+                            <th>
+                                Rol:
+                            </th>
+                            <th>
+                                Curso:
+                            </th>
+                            <th>
+                                Clase:
+                            </th>
+                            <th>
+                                Email:
+                            </th>
+                        </tr>
+
+                        <tr id="row1"> <!--Nueva fila -->
+                            <td>
+                                Helena
+                            </td>
+                            <td>
+                                Milla
+                            </td>
+                            <td>
+                                Cabrera
+                            </td>
+                            <td>
+                                PAS
+                            </td>
+                            <td>
+                                -
+                            </td>
+                            <td>
+                                -
+                            </td>
+                            <td>
+                                helenamillacabrera@gmail.com
+                            </td>
+                            <td>
+                                <img src="images/edit-icon.svg" class="edit-icon" alt="Editar"
+                                    onclick="editRow('row1')">
+                                <img src="images/delete-icon.svg" class="delete-icon" alt="Eliminar"
+                                    onclick="deleteRow('row1')">
+                            </td>
+                        </tr>
+
+                        <tr id="row2"> <!--Nueva fila -->
+                            <td>
+                                Clara
+                            </td>
+                            <td>
+                                Ruiz-
+                            </td>
+                            <td>
+                                Santacruz
+                            </td>
+                            <td>
+                                Estudiante
+                            </td>
+                            <td>
+                                Intermedio
+                            </td>
+                            <td>
+                                Flamenco
+                            </td>
+                            <td>
+                                correodeejemplo@gmail.com
+                            </td>
+                            <td>
+                                <img src="images/edit-icon.svg" class="edit-icon" alt="Editar"
+                                    onclick="editRow('row2')">
+                                <img src="images/delete-icon.svg" class="delete-icon" alt="Eliminar"
+                                    onclick="deleteRow('row2')">
+                            </td>
+                        </tr>
+
+                        <tr id="row3"> <!--Nueva fila -->
+                            <td>
+                                Lorena
+                            </td>
+                            <td>
+                                R.
+                            </td>
+                            <td>
+                                -
+                            </td>
+                            <td>
+                                Docente
+                            </td>
+                            <td>
+                                Avanzado
+                            </td>
+                            <td>
+                                Hip Hop
+                            </td>
+                            <td>
+                                correodeejemplo2@gmail.com
+                            </td>
+                            <td>
+                                <img src="images/edit-icon.svg" class="edit-icon" alt="Editar"
+                                    onclick="editRow('row3')">
+                                <img src="images/delete-icon.svg" class="delete-icon" alt="Eliminar"
+                                    onclick="deleteRow('row3')">
+                            </td>
+                        </tr>
+
+                        <tr id="row4"> <!--Nueva fila -->
+                            <td>
+                                Yuliia
+                            </td>
+                            <td>
+                                Bila
+                            </td>
+                            <td>
+                                -
+                            </td>
+                            <td>
+                                Docente
+                            </td>
+                            <td>
+                                Principiante
+                            </td>
+                            <td>
+                                Ballet
+                            </td>
+                            <td>
+                                correodeejemplo3@gmail.com
+                            </td>
+                            <td>
+                                <img src="images/edit-icon.svg" class="edit-icon" alt="Editar"
+                                    onclick="editRow('row4')">
+                                <img src="images/delete-icon.svg" class="delete-icon" alt="Eliminar"
+                                    onclick="deleteRow('row4')">
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
+
+            <!-- Aquí empiezan los BOTONES-->
+
+            <section class="listButton">
+
+                <section>
+                    <button id="saveListButton">Guardar</button>
+                </section>
+
+                <section>
+                    <form action="#" id="loadlistbutton">
+                        <select name="listas">
+                            <option selected disabled>Cargar Listas</option>
+                            <optgroup label="Rol">
+                                <option value="estudiante">Estudiante</option>
+                                <option value="docente">Docente</option>
+                                <option value="pas">PAS</option>
+                                <option value="otros">-</option>
+                            </optgroup>
+                            <optgroup label="Estilo">
+                                <option value="flamenco">Flamenco</option>
+                                <option value="hiphop">Hip Hop</option>
+                                <option value="Ballet">Ballet</option>
+                            </optgroup>
+                            <optgroup label="Curso">
+                                <option value="basico">Básico</option>
+                                <option value="intermedio">Intermedio</option>
+                                <option value="superior">Superior</option>
+                            </optgroup>
+                            <optgroup label="Clase">
+                                <option value="primero">Primero</option>
+                                <option value="segundo">Segundo</option>
+                                <option value="tercero">Tercero</option>
+                            </optgroup>
+
+                        </select>
+
+                    </form>
+                </section>
+            </section>
+        </section>
 
     </section>
 
     <script src="script.js"></script>
-    <div class="form"> <!--form ejemplo para poder ordenar list-->
-        <h1 class="title">Aqui va el formulario</h1>
-    </div>
-
-    <div class="list">
-        <h1 class="title"> <!--Ttitulo tabla -->
-            Listado
-        </h1>
-        <!--Tabla -->
-        <table id="myTable">
-
-            <tr> <!--primera fila -->
-                <th> <!--table header -->
-                    Nombre:
-                </th>
-                <th>
-                    Primer Apellido:
-                </th>
-                <th>
-                    Segundo Apellido:
-                </th>
-                <th>
-                    Rol:
-                </th>
-                <th>
-                    Curso:
-                </th>
-                <th>
-                    Clase:
-                </th>
-                <th>
-                    Email:
-                </th>
-            </tr>
-
-            <tr id="row1"> <!--Nueva fila -->
-                <td>
-                    Helena
-                </td>
-                <td>
-                    Milla
-                </td>
-                <td>
-                    Cabrera
-                </td>
-                <td>
-                    PAS
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    helenamillacabrera@gmail.com
-                </td>
-                <td>
-                    <img src="edit-icon.svg" class="edit-icon" alt="Editar" onclick="editRow('row1')">
-                    <img src="delete-icon.svg" class="delete-icon" alt="Eliminar" onclick="deleteRow('row1')">
-                </td>
-            </tr>
-
-            <tr id="row2"> <!--Nueva fila -->
-                <td>
-                    Clara
-                </td>
-                <td>
-                    Ruiz-
-                </td>
-                <td>
-                    Santacruz
-                </td>
-                <td>
-                    Estudiante
-                </td>
-                <td>
-                    Intermedio
-                </td>
-                <td>
-                    Flamenco
-                </td>
-                <td>
-                    correodeejemplo@gmail.com
-                </td>
-                <td>
-                    <img src="edit-icon.svg" class="edit-icon" alt="Editar" onclick="editRow('row2')">
-                    <img src="delete-icon.svg" class="delete-icon" alt="Eliminar" onclick="deleteRow('row2')">
-                </td>
-            </tr>
-
-            <tr id="row3"> <!--Nueva fila -->
-                <td>
-                    Lorena
-                </td>
-                <td>
-                    R.
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Docente
-                </td>
-                <td>
-                    Avanzado
-                </td>
-                <td>
-                    Hip Hop
-                </td>
-                <td>
-                    correodeejemplo2@gmail.com
-                </td>
-                <td>
-                    <img src="edit-icon.svg" class="edit-icon" alt="Editar" onclick="editRow('row3')">
-                    <img src="delete-icon.svg" class="delete-icon" alt="Eliminar" onclick="deleteRow('row3')">
-                </td>
-            </tr>
-
-            <tr id="row4"> <!--Nueva fila -->
-                <td>
-                    Yuliia
-                </td>
-                <td>
-                    Bila
-                </td>
-                <td>
-                    -
-                </td>
-                <td>
-                    Docente
-                </td>
-                <td>
-                    Principiante
-                </td>
-                <td>
-                    Ballet
-                </td>
-                <td>
-                    correodeejemplo3@gmail.com
-                </td>
-                <td>
-                    <img src="edit-icon.svg" class="edit-icon" alt="Editar" onclick="editRow('row4')">
-                    <img src="delete-icon.svg" class="delete-icon" alt="Eliminar" onclick="deleteRow('row4')">
-                </td>
-            </tr>
-
-        </table>
-    </div>
 </body>
 
 </html>

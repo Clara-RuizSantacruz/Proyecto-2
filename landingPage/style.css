@@ -15,7 +15,7 @@
     opacity: 1; 
 }
 
-
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -46,6 +46,7 @@ transition: transform 0.5s ease-in-out;
     height: auto;
     margin: 2px;
 }
+/* Termina Navbar */
 
 .mainContent {
     display: flex;
