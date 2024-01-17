@@ -19,13 +19,11 @@
         height: 49px;
         text-align: left;
         padding-left: 20px;
-
     }
 
     select option {
         text-align: left;
     }
-
 
     .listButton {
         display: flex;
@@ -62,15 +60,11 @@
         height: 49px;
         text-align: left;
         padding-left: 20px;
-
-
     }
 
     select option {
         text-align: left;
     }
-
-
 
     .listButton {
         display: flex;
