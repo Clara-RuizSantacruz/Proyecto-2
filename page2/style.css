@@ -1,0 +1,86 @@
+@media screen and (min-width: 300px) {
+    /* Responsive Desktop */
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        /* Añade espacio alrededor de todo el cuerpo */
+        background-color: #FAF3F0;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    td,
+    th {
+        text-align: center;
+        padding: 15px;
+        border: none;
+        color: #393838;
+    }
+
+    tr:nth-child(even) {
+        background-color: #D4E2D4;
+        /* Color de fondo para filas pares */
+    }
+
+    tr:nth-child(odd) {
+        background-color: #FAF3F0;
+        /* Color de fondo para filas impares */
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    table {
+        border-collapse: collapse;
+        /* Fusiona los bordes de las celdas */
+        width: 100%;
+    }
+
+    .form,
+    .list {
+        padding: 10px;
+        /* Añade espacio alrededor del contenido del formulario y la lista */
+        box-sizing: border-box;
+        flex: 1;
+        /* Ambos ocupan el mismo espacio inicialmente */
+    }
+
+    .form {
+        background-color: #F8DBDC;
+        margin-right: 5px;
+    }
+
+    .list {
+        margin-top: 10px;
+        /* Agrega un pequeño espacio entre form y list */
+    }
+}
+
+@media screen and (max-width: 430px) {
+    /* responsive phone */
+
+    .form,
+    .list {
+        flex: 1;
+        /* Ambos ocupan el mismo espacio */
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .list {
+        margin-top: 0;
+        /* Restablece el espacio entre form y list */
+    }
+
+    .form {
+        order: 2;
+        /* Cambia el orden de visualización en dispositivos móviles */
+        margin-top: 10px;
+        /* Agrega espacio entre list y form en dispositivos móviles */
+
+    }
+}

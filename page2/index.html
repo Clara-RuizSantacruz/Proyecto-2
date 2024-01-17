@@ -1,14 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link src="style.css">
+    <title>Listado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <script src="script.js"></script>
+    <div class="form"> <!--form ejemplo para poder ordenar list-->
+        <h1 class="title">Aqui va el formulario</h1>
+    </div>
+
+    <div class="list">
+        <h1 class="title"> <!--Ttitulo tabla -->
+            Listado
+        </h1>
+        <!--Tabla -->
+        <table id="myTable">
+
+            <tr> <!--primera fila -->
+                <th> <!--table header -->
+                    Nombre:
+                </th>
+                <th>
+                    Primer Apellido:
+                </th>
+                <th>
+                    Segundo Apellido:
+                </th>
+                <th>
+                    Rol:
+                </th>
+                <th>
+                    Curso:
+                </th>
+                <th>
+                    Clase:
+                </th>
+                <th>
+                    Email:
+                </th>
+            </tr>
+
+            <tr id="row1"> <!--Nueva fila -->
+                <td>
+                    Helena
+                </td>
+                <td>
+                    Milla
+                </td>
+                <td>
+                    Cabrera
+                </td>
+                <td>
+                    PAS
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    helenamillacabrera@gmail.com
+                </td>
+                <td>
+                    <img src="edit-icon.svg" class="edit-icon" alt="Editar" onclick="editRow('row1')">
+                    <img src="delete-icon.svg" class="delete-icon" alt="Eliminar" onclick="deleteRow('row1')">
+                </td>
+            </tr>
+
+            <tr id="row2"> <!--Nueva fila -->
+                <td>
+                    Clara
+                </td>
+                <td>
+                    Ruiz-
+                </td>
+                <td>
+                    Santacruz
+                </td>
+                <td>
+                    Estudiante
+                </td>
+                <td>
+                    Intermedio
+                </td>
+                <td>
+                    Flamenco
+                </td>
+                <td>
+                    correodeejemplo@gmail.com
+                </td>
+                <td>
+                    <img src="edit-icon.svg" class="edit-icon" alt="Editar" onclick="editRow('row2')">
+                    <img src="delete-icon.svg" class="delete-icon" alt="Eliminar" onclick="deleteRow('row2')">
+                </td>
+            </tr>
+
+            <tr id="row3"> <!--Nueva fila -->
+                <td>
+                    Lorena
+                </td>
+                <td>
+                    R.
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Docente
+                </td>
+                <td>
+                    Avanzado
+                </td>
+                <td>
+                    Hip Hop
+                </td>
+                <td>
+                    correodeejemplo2@gmail.com
+                </td>
+                <td>
+                    <img src="edit-icon.svg" class="edit-icon" alt="Editar" onclick="editRow('row3')">
+                    <img src="delete-icon.svg" class="delete-icon" alt="Eliminar" onclick="deleteRow('row3')">
+                </td>
+            </tr>
+
+            <tr id="row4"> <!--Nueva fila -->
+                <td>
+                    Yuliia
+                </td>
+                <td>
+                    Bila
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Docente
+                </td>
+                <td>
+                    Principiante
+                </td>
+                <td>
+                    Ballet
+                </td>
+                <td>
+                    correodeejemplo3@gmail.com
+                </td>
+                <td>
+                    <img src="edit-icon.svg" class="edit-icon" alt="Editar" onclick="editRow('row4')">
+                    <img src="delete-icon.svg" class="delete-icon" alt="Eliminar" onclick="deleteRow('row4')">
+                </td>
+            </tr>
+
+        </table>
+    </div>
 </body>
 
 </html>
