@@ -1,3 +1,63 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px; /* Añade espacio alrededor de todo el cuerpo */
+}
+
+td,
+th {
+    text-align: center;
+    padding: 15px;
+    border: none;
+    color: #393838;
+}
+
+tr:nth-child(even) {
+    background-color: #D4E2D4;
+    /* Color de fondo para filas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #FAF3F0;
+    /* Color de fondo para filas impares */
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    /* Fusiona los bordes de las celdas */
+    width: 100%;
+}
+
+.form {
+    flex: 1;
+    margin-right: 5px;
+    background-color: rgb(192, 248, 230);
+    /* Ajusta el margen derecho según sea necesario */
+    padding: 10px; /* Añade espacio alrededor del contenido del formulario */
+}
+
+.list {
+    flex: 2;
+    margin-left: 5px; /* Ajusta el margen izquierdo según sea necesario */
+    padding: 10px; /* Añade espacio alrededor del contenido de la lista */
+}
+
+.form,
+.list {
+    flex: 1;
+    margin: 0 0 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .form {
+        margin-left: 10px;
+    }
+}
 * {
     font-family: Open Sans;
 }
