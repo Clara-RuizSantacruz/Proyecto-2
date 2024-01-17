@@ -1,3 +1,153 @@
+* {
+    font-family: Open Sans;
+}
+
+
+/* Aquí empiezan los estilos del FORMULARIO */
+
+.formulary {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 50px;
+}
+
+.formulary-background {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 345px;
+    height: 705px;
+    background-color: #F8DBDC;
+    border-radius: 30px;
+    padding: 20px
+}
+
+.double-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#first-lastname,
+#second-lastname {
+    width: 115px
+}
+
+
+.input {
+    width: 245px;
+    height: 35px;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+    margin-top: 10px;
+}
+
+.send-button {
+    background-color: #D4E2D4;
+    border-radius: 20px;
+    border-color: #000000;
+    border: 1px solid;
+    font-size: 16px;
+    width: 165px;
+    height: 49px;
+}
+
+#send-button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 430px) {
+    .body-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100vh;
+        margin-bottom: 40px
+    }
+}
+
+/* Hasta aquí llegan los estilos del FORMULARIO */
+
+@media screen and (min-width: 430px) {
+    .listButton button {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+    }
+
+    select {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    select option {
+        text-align: left;
+    }
+
+    .listButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 337px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .listButton button {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+    }
+
+    #loadlistbutton {
+        padding-top: 42px;
+    }
+
+    select {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    select option {
+        text-align: left;
+    }
+
+    .listButton {
+        display: flex;
+        flex-direction: column;
+        padding-top: 86px;
+        align-items: center;
+    }
+}
 @media screen and (min-width: 300px) {
     /* Responsive Desktop */
 
