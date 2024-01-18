@@ -6,6 +6,10 @@ function listAlert() {
     alert("Lista guardada correctamente");
 });*/
 function addToTable() {
+    let inputTitle = document.getElementById("list-title").value;
+    let h1TableTitle = document.getElementById("table-title");
+    h1TableTitle.textContent = "Listado: " + '"' + inputTitle + '"';
+    
     let inputFirstName = document.getElementById("first-name").value;
     let inputFirstLastName = document.getElementById("first-lastname").value;
     let inputSecondLastName = document.getElementById("second-lastname").value;

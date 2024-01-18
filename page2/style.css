@@ -112,7 +112,7 @@ a {
 }
 
 @media screen and (min-width: 300px) {
-   
+
 
     /* Responsive Desktop */
     body {
@@ -150,9 +150,10 @@ a {
         /* Color de fondo para filas impares */
     }
 
-    .title {
+    #table-title {
         text-align: center;
         margin-bottom: 10px;
+        font-size: xx-large;
     }
 
     table {
@@ -228,74 +229,74 @@ a {
 
 @media screen and (max-width: 300) {
 
-.mainGroup {
-    display: flex;
-    flex-direction: row;
-}
+    .mainGroup {
+        display: flex;
+        flex-direction: row;
+    }
 
-.listAndButtonsGroup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .listAndButtonsGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.listButton button {
-    background-color: #D4E2D4;
-    border-radius: 10px;
-    border-color: #000000;
-    border: 1px solid;
-    font-size: 16px;
-    width: 165px;
-    height: 49px;
-}
+    .listButton button {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+    }
 
-#loadlistbutton {
-    padding-top: 42px;
-}
+    #loadlistbutton {
+        padding-top: 42px;
+    }
 
-select {
-    background-color: #D4E2D4;
-    border-radius: 10px;
-    border-color: #000000;
-    border: 1px solid;
-    font-size: 16px;
-    width: 165px;
-    height: 49px;
-    text-align: left;
-    padding-left: 20px;
-}
+    select {
+        background-color: #D4E2D4;
+        border-radius: 10px;
+        border-color: #000000;
+        border: 1px solid;
+        font-size: 16px;
+        width: 165px;
+        height: 49px;
+        text-align: left;
+        padding-left: 20px;
+    }
 
-select option {
-    text-align: left;
-}
+    select option {
+        text-align: left;
+    }
 
-.listButton {
-    display: flex;
-    flex-direction: column;
-    padding-top: 86px;
-    align-items: center;
-}
+    .listButton {
+        display: flex;
+        flex-direction: column;
+        padding-top: 86px;
+        align-items: center;
+    }
 
-/* responsive phone */
+    /* responsive phone */
 
-.form,
-.list {
-    flex: 1;
-    /* Ambos ocupan el mismo espacio */
-    margin-right: 0;
-    margin-left: 0;
-}
+    .form,
+    .list {
+        flex: 1;
+        /* Ambos ocupan el mismo espacio */
+        margin-right: 0;
+        margin-left: 0;
+    }
 
-.list {
-    margin-top: 0;
-    /* Restablece el espacio entre form y list */
-}
+    .list {
+        margin-top: 0;
+        /* Restablece el espacio entre form y list */
+    }
 
-.form {
-    order: 2;
-    /* Cambia el orden de visualización en dispositivos móviles */
-    margin-top: 10px;
-    /* Agrega espacio entre list y form en dispositivos móviles */
+    .form {
+        order: 2;
+        /* Cambia el orden de visualización en dispositivos móviles */
+        margin-top: 10px;
+        /* Agrega espacio entre list y form en dispositivos móviles */
 
-}
+    }
 }
