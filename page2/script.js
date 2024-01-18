@@ -11,6 +11,7 @@ function listAlert() {
 function addToTable() {
     let inputFirstName = document.getElementById("first-name").value;
     let inputFirstLastName = document.getElementById("first-lastname").value;
+    let inputSecondLastName = document.getElementById("second-lastname").value;
 
     // New table row
     let tableRow = document.createElement("tr");
@@ -21,6 +22,9 @@ function addToTable() {
 
     let tableDataFirstLastName = document.createElement("td");
     tableDataFirstLastName.appendChild(document.createTextNode(inputFirstLastName));
+
+    let tableDataSecondLastName =  document.createElement("td");
+    tableDataSecondLastName.appendChild(document.createTextNode(inputSecondLastName));
 
     /* Create td for button
     let tableDataActions = document.createElement("td");
@@ -50,6 +54,7 @@ function addToTable() {
     tableRow.appendChild(tableDataName);
     //tableRow.appendChild(tableDataActions);
     tableRow.appendChild(tableDataFirstLastName);
+    tableRow.appendChild(tableDataSecondLastName);
 
 
     // Add row to the table
@@ -58,6 +63,7 @@ function addToTable() {
     // Clear input fields
     document.getElementById("first-name").value = "";
     document.getElementById("first-lastname").value = "";
+    document.getElementById("second-lastname").value = "";
 }
 /*
 function editRow(row) {
