@@ -114,18 +114,25 @@ function editRow(row) {
     let firstName = row.cells[0].textContent;
     // Fill in input fields with saved data
     document.getElementById("first-name").value = firstName;
+
     let firstLastName = row.cells[1].textContent;
     document.getElementById("first-lastname").value = firstLastName;
+
     let secondLastName = row.cells[2].textContent;
     document.getElementById("second-lastname").value = secondLastName;
+
     let Rol = row.cells[3].textContent;
     document.getElementById("rol").value = Rol;
+
     let Level = row.cells[4].textContent;
     document.getElementById("level").value = Level;
+
     let Class = row.cells[5].textContent;
     document.getElementById("class").value = Class;
+
     let Email = row.cells[6].textContent;
     document.getElementById("email").value = Email;
+    
     // Delete a line after editing
     deleteRow(row);
 }
