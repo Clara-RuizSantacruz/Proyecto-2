@@ -14,7 +14,6 @@ function addToTable() {
     let inputSecondLastName = document.getElementById("second-lastname").value;
     let inputRol = document.getElementById("rol").value;
     let inputLevel = document.getElementById("level").value;
-    let inputEmail = document.getElementById("email").value;
 
     // New table row
     let tableRow = document.createElement("tr");
@@ -34,10 +33,9 @@ function addToTable() {
 
     let tableDataLevel = document.createElement("td");
     tableDataLevel.appendChild(document.createTextNode(inputLevel))
-
-    let tableDataEmail = document.createElement("td");
-    tableDataEmail.appendChild(document.createTextNode(inputEmail))
     
+    let tableDataClass =document.createElement ("td");
+    tableDataClass.appendChild(document.createTextNode(inputClass));
 
 
     /* Create td for button
@@ -71,7 +69,6 @@ function addToTable() {
     tableRow.appendChild(tableDataSecondLastName);
     tableRow.appendChild(tableDataRol);
     tableRow.appendChild(tableDataLevel);
-    tableRow.appendChild(tableDataEmail);
 
 
     // Add row to the table
@@ -83,7 +80,6 @@ function addToTable() {
     document.getElementById("second-lastname").value = "";
     document.getElementById("rol").value = "";
     document.getElementById("level").value ="";
-    document.getElementById("email").value ="";
 }
 /*
 function editRow(row) {
