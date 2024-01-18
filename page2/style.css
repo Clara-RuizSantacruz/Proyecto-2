@@ -111,8 +111,10 @@ a {
     padding-top: 30px;
 }
 
-@media screen and (min-width: 300px) {
 
+
+
+@media screen and (min-width: 429px) {
 
     /* Responsive Desktop */
     body {
@@ -227,11 +229,10 @@ a {
     }
 }
 
-@media screen and (max-width: 300) {
-
+@media screen and (max-width: 430px) {
+    
     .mainGroup {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .listAndButtonsGroup {
@@ -299,4 +300,8 @@ a {
         /* Agrega espacio entre list y form en dispositivos móviles */
 
     }
+}
+
+
+
 }
