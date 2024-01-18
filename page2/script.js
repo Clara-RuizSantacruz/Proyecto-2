@@ -9,27 +9,27 @@ function listAlert() {
 
 
 function addToTable() {
-    var inputFirstName = document.getElementById("first-name").value;
+    let inputFirstName = document.getElementById("first-name").value;
 
     // New table row
-    var tableRow = document.createElement("tr");
+    let tableRow = document.createElement("tr");
 
     // New table data
-    var tableDataName = document.createElement("td");
+    let tableDataName = document.createElement("td");
     tableDataName.appendChild(document.createTextNode(inputFirstName));
 
     // Create td for button
-    var tableDataActions = document.createElement("td");
+    let tableDataActions = document.createElement("td");
 
     // Create "Edit" та "Delete"
-    var editButton = document.createElement("button");
+    let editButton = document.createElement("button");
     editButton.textContent = "Edit";
     editButton.className = "edit-button";
     editButton.onclick = function () {
         editRow(tableRow);
     };
 
-    var deleteButton = document.createElement("button");
+    let deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
     deleteButton.className = "delete-button";
     deleteButton.onclick = function () {
@@ -53,7 +53,7 @@ function addToTable() {
 
 function editRow(row) {
     // Get row data for editing
-    var firstName = row.cells[0].textContent;
+    let firstName = row.cells[0].textContent;
 
     // Fill in input fields with saved data
     document.getElementById("first-name").value = firstName;
