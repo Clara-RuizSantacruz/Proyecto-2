@@ -13,6 +13,7 @@ function addToTable() {
     let inputFirstLastName = document.getElementById("first-lastname").value;
     let inputSecondLastName = document.getElementById("second-lastname").value;
     let inputRol = document.getElementById("rol").value;
+    let inputLevel = document.getElementById("level").value;
 
     // New table row
     let tableRow = document.createElement("tr");
@@ -29,6 +30,9 @@ function addToTable() {
 
     let tableDataRol = document.createElement("td");
     tableDataRol.appendChild(document.createTextNode(inputRol));
+
+    let tableDataLevel = document.createElement("td");
+    tableDataLevel.appendChild(document.createTextNode(inputLevel))
     
 
 
@@ -62,6 +66,7 @@ function addToTable() {
     tableRow.appendChild(tableDataFirstLastName);
     tableRow.appendChild(tableDataSecondLastName);
     tableRow.appendChild(tableDataRol);
+    tableRow.appendChild(tableDataLevel);
 
 
     // Add row to the table
@@ -72,6 +77,7 @@ function addToTable() {
     document.getElementById("first-lastname").value = "";
     document.getElementById("second-lastname").value = "";
     document.getElementById("rol").value = "";
+    document.getElementById("level").value ="";
 }
 /*
 function editRow(row) {
