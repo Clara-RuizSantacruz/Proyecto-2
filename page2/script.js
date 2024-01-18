@@ -10,6 +10,7 @@ function listAlert() {
 
 function addToTable() {
     let inputFirstName = document.getElementById("first-name").value;
+    let inputFirstLastName = document.getElementById("first-lastname").value;
 
     // New table row
     let tableRow = document.createElement("tr");
@@ -18,10 +19,13 @@ function addToTable() {
     let tableDataName = document.createElement("td");
     tableDataName.appendChild(document.createTextNode(inputFirstName));
 
-    // Create td for button
+    let tableDataFirstLastName = document.createElement("td");
+    tableDataFirstLastName.appendChild(document.createTextNode(inputFirstLastName));
+
+    /* Create td for button
     let tableDataActions = document.createElement("td");
 
-    // Create "Edit" та "Delete"
+    // Create "Edit" and "Delete"
     let editButton = document.createElement("button");
     editButton.textContent = "Edit";
     editButton.className = "edit-button";
@@ -39,18 +43,23 @@ function addToTable() {
     // Add buttons to td
     tableDataActions.appendChild(editButton);
     tableDataActions.appendChild(deleteButton);
+*/
+
 
     // Add table data to table row
     tableRow.appendChild(tableDataName);
-    tableRow.appendChild(tableDataActions);
+    //tableRow.appendChild(tableDataActions);
+    tableRow.appendChild(tableDataFirstLastName);
+
 
     // Add row to the table
     document.getElementById("tableBody").appendChild(tableRow);
 
     // Clear input fields
     document.getElementById("first-name").value = "";
+    document.getElementById("first-lastname").value = "";
 }
-
+/*
 function editRow(row) {
     // Get row data for editing
     let firstName = row.cells[0].textContent;
@@ -64,4 +73,4 @@ function editRow(row) {
 
 function deleteRow(row) {
     row.parentNode.removeChild(row);
-}
+}*/
