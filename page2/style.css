@@ -118,9 +118,9 @@ a {
 
     /* Responsive Desktop */
     body {
-        /* width: 100%; */
-        /* display: flex;
-        flex-wrap: wrap;  */
+        /* width: 100%;
+        display: flex;
+        flex-wrap: wrap; */
         /* margin: 20px; */
         /* Añade espacio alrededor de todo el cuerpo */
         background-color: #FAF3F0;
@@ -230,7 +230,7 @@ a {
 }
 
 @media screen and (max-width: 430px) {
-    
+
     .mainGroup {
         flex-direction: column;
     }
