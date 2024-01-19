@@ -16,10 +16,10 @@ function addToTable() {
     let inputClass = document.getElementById("class").value;
     let inputEmail = document.getElementById("email").value;
 
-    // New table row
+
     let tableRow = document.createElement("tr");
 
-    // New table data
+
     let tableDataName = document.createElement("td");
     tableDataName.appendChild(document.createTextNode(inputFirstName));
 
@@ -41,10 +41,10 @@ function addToTable() {
     let tableDataEmail = document.createElement("td");
     tableDataEmail.appendChild(document.createTextNode(inputEmail));
 
-    //Create td for button
+
     let tableDataActions = document.createElement("td");
 
-    // Create "Edit" and "Delete" images
+
     let editImage = document.createElement("img");
     editImage.src = "images/edit-icon.svg";
     editImage.alt = "Editar";
@@ -59,16 +59,16 @@ function addToTable() {
     deleteImage.onclick = function () {
         deleteRow(tableRow);
     };
-    // Add images to td
-    tableDataActions.appendChild(editImage);
-    tableDataActions.appendChild(deleteImage);
 
-    // Add images to td
     tableDataActions.appendChild(editImage);
     tableDataActions.appendChild(deleteImage);
 
 
-    // Add table data to table row
+    tableDataActions.appendChild(editImage);
+    tableDataActions.appendChild(deleteImage);
+
+
+
     tableRow.appendChild(tableDataName);
     tableRow.appendChild(tableDataFirstLastName);
     tableRow.appendChild(tableDataSecondLastName);
@@ -78,10 +78,10 @@ function addToTable() {
     tableRow.appendChild(tableDataEmail);
     tableRow.appendChild(tableDataActions);
 
-    // Add row to the table
+
     document.getElementById("tableBody").appendChild(tableRow);
 
-    // Clear input fields
+
     document.getElementById("first-name").value = "";
     document.getElementById("first-lastname").value = "";
     document.getElementById("second-lastname").value = "";
@@ -89,30 +89,14 @@ function addToTable() {
     document.getElementById("level").value = "";
     document.getElementById("class").value = "";
     document.getElementById("email").value = "";
-
-
-    // Validaciones
-
-    
-    // let inputFirstName = document.getElementById("first-name").value;
-    // let inputFirstLastName = document.getElementById("first-lastname").value;
-    
-    // if (!inputFirstName || !inputFirstLastName) {
-    //     alert("Por favor, completa todos los campos obligatorios.");
-    //     return; 
-    // }
-
-
-
-
 }
 
 
 
 function editRow(row) {
-    // Get row data for editing
+
     let firstName = row.cells[0].textContent;
-    // Fill in input fields with saved data
+
     document.getElementById("first-name").value = firstName;
 
     let firstLastName = row.cells[1].textContent;
@@ -132,8 +116,7 @@ function editRow(row) {
 
     let Email = row.cells[6].textContent;
     document.getElementById("email").value = Email;
-    
-    // Delete a line after editing
+
     deleteRow(row);
 }
 

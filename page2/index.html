@@ -15,8 +15,8 @@
 
 <body>
 
-    <!-- Aquí empieza el NAVBAR-->
     <div class="container" id="mainContainer">
+
         <nav class="navBar">
 
             <a href="../landingPage/index.html">
@@ -29,19 +29,24 @@
                     <img class="icon" src="images/home-mobile-ui-svgrepo-com.svg" alt="icon-home">
                     <h3> <a class="link" href="../landingPage/index.html">Home</a> </h3>
                 </div>
+
                 <div class="helpIcon">
                     <img class="icon" src="images/help-circle-svgrepo-com.svg" alt="icon-help">
                     <h3> <a class="link" href="#">Help</a> </h3>
                 </div>
+
             </div>
+
         </nav>
+
     </div>
 
 
 
 
-    <!-- Aquí empieza FORMULARIO -->
+
     <section class="mainGroup">
+
         <section class="formulary-background">
 
             <form class="formulary">
@@ -57,7 +62,6 @@
                 </div>
 
                 <div class="double-column">
-
                     <div>
                         <label for="first-lastname">Primer apellido:</label>
                         <input class="input" id="first-lastname">
@@ -67,7 +71,6 @@
                         <label for="second-lastname">Segundo apellido:</label>
                         <input class="input" id="second-lastname">
                     </div>
-
                 </div>
 
                 <div>
@@ -110,23 +113,26 @@
                 <div id="send-button-container">
                     <button type="button" class="send-button" onclick="addToTable()">Enviar</button>
                 </div>
+
             </form>
 
         </section>
 
 
-        <!--Aquí empieza la TABLA -->
         <section class="listAndButtonsGroup">
+
             <section>
+
                 <div class="list">
-                    <h1 id="table-title"> <!--Ttitulo tabla -->
+
+                    <h1 id="table-title">
                         Listado
                     </h1>
-                    <!--Tabla -->
+
                     <table id="myTable">
 
-                        <tr> <!--primera fila -->
-                            <th> <!--table header -->
+                        <tr>
+                            <th>
                                 Nombre:
                             </th>
                             <th>
@@ -150,7 +156,7 @@
                         </tr>
 
                         <tbody id="tableBody">
-                            <tr id="row1"> <!--Nueva fila-->
+                            <tr id="row1">
                                 <td>
                                     Helena
                                 </td>
@@ -180,7 +186,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="row2"> <!--Nueva fila-->
+                            <tr id="row2">
                                 <td>
                                     Clara
                                 </td>
@@ -210,7 +216,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="row3"> <!--Nueva fila-->
+                            <tr id="row3">
                                 <td>
                                     Lorena
                                 </td>
@@ -240,7 +246,7 @@
                                 </td>
                             </tr>
 
-                            <tr id="row4"> <!--Nueva fila-->
+                            <tr id="row4">
                                 <td>
                                     Yuliia
                                 </td>
@@ -269,15 +275,15 @@
                                         onclick="deleteRow('row4')">
                                 </td>
                             </tr>
+
                         </tbody>
 
-
-
                     </table>
+
                 </div>
+
             </section>
 
-            <!-- Aquí empiezan los BOTONES-->
 
             <section class="listButton">
 
@@ -286,25 +292,32 @@
                 </section>
 
                 <section>
+
                     <form action="#" id="loadlistbutton">
+
                         <select name="listas">
+
                             <option selected disabled>Cargar Listas</option>
+
                             <optgroup label="Rol">
                                 <option value="estudiante">Estudiante</option>
                                 <option value="docente">Docente</option>
                                 <option value="pas">PAS</option>
                                 <option value="otros">-</option>
                             </optgroup>
+
                             <optgroup label="Estilo">
                                 <option value="flamenco">Flamenco</option>
                                 <option value="hiphop">Hip Hop</option>
                                 <option value="Ballet">Ballet</option>
                             </optgroup>
+
                             <optgroup label="Curso">
                                 <option value="basico">Básico</option>
                                 <option value="intermedio">Intermedio</option>
                                 <option value="superior">Superior</option>
                             </optgroup>
+
                             <optgroup label="Clase">
                                 <option value="primero">Primero</option>
                                 <option value="segundo">Segundo</option>
@@ -314,13 +327,17 @@
                         </select>
 
                     </form>
+
                 </section>
+
             </section>
+
         </section>
 
     </section>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -50,10 +50,6 @@ a {
     font-size: 24px;
 }
 
-
-
-/* Aquí empiezan los estilos del FORMULARIO */
-
 .formulary {
     display: grid;
     grid-template-columns: 1fr;
@@ -85,7 +81,6 @@ a {
     width: 115px
 }
 
-
 .input {
     width: 245px;
     height: 35px;
@@ -116,13 +111,7 @@ a {
 
 @media screen and (min-width: 429px) {
 
-    /* Responsive Desktop */
     body {
-        /* width: 100%;
-        display: flex;
-        flex-wrap: wrap; */
-        /* margin: 20px; */
-        /* Añade espacio alrededor de todo el cuerpo */
         background-color: #FAF3F0;
         font-family: 'Open Sans', sans-serif;
     }
@@ -144,12 +133,10 @@ a {
 
     tr:nth-child(even) {
         background-color: #D4E2D4;
-        /* Color de fondo para filas pares */
     }
 
     tr:nth-child(odd) {
         background-color: #FAF3F0;
-        /* Color de fondo para filas impares */
     }
 
     #table-title {
@@ -160,17 +147,14 @@ a {
 
     table {
         border-collapse: collapse;
-        /* Fusiona los bordes de las celdas */
         width: 100%;
     }
 
     .form,
     .list {
         padding: 10px;
-        /* Añade espacio alrededor del contenido del formulario y la lista */
         box-sizing: border-box;
         flex: 1;
-        /* Ambos ocupan el mismo espacio inicialmente */
     }
 
     .form {
@@ -180,7 +164,6 @@ a {
 
     .list {
         margin-top: 10px;
-        /* Agrega un pequeño espacio entre form y list */
     }
 
     .listButton button {
@@ -221,13 +204,14 @@ a {
     .listButton {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-around; */
         align-items: center;
         padding-top: 50px;
         padding-left: 300px;
-        /* padding-right: 70px; */
     }
 }
+
+
+
 
 @media screen and (max-width: 430px) {
 
@@ -278,26 +262,20 @@ a {
         align-items: center;
     }
 
-    /* responsive phone */
-
     .form,
     .list {
         flex: 1;
-        /* Ambos ocupan el mismo espacio */
         margin-right: 0;
         margin-left: 0;
     }
 
     .list {
         margin-top: 0;
-        /* Restablece el espacio entre form y list */
     }
 
     .form {
         order: 2;
-        /* Cambia el orden de visualización en dispositivos móviles */
         margin-top: 10px;
-        /* Agrega espacio entre list y form en dispositivos móviles */
 
     }
 }
